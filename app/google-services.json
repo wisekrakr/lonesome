@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "675192414411",
+    "firebase_url": "https://lonesome-12975.firebaseio.com",
+    "project_id": "lonesome-12975",
+    "storage_bucket": "lonesome-12975.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675192414411:android:a01c3435febb6f124abb4e",
+        "android_client_info": {
+          "package_name": "com.wisekrakr.david.lonesome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675192414411-vd9jtbltg7i42qgrpgtu2i6las9lsds9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA465ymxh0MycKmOOr97Mg_7gS4Bm9vsts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675192414411-vd9jtbltg7i42qgrpgtu2i6las9lsds9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

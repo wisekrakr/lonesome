@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.activities.auth.RegisterActivity"
+    android:padding="40dp"
+    android:id="@+id/signUp_layout"
+    style="@style/PageTheme">
+
+<!--    TextView: label Register-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="@string/join_the_club"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"/>
+
+<!--    EditText: Input Email-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/prompt_email"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--    EditText: Input Password-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/email_layout"
+        app:passwordToggleEnabled="true"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/prompt_password"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    
+<!--   Button: Register User -->
+    <Button
+        android:id="@+id/signUp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_below="@id/password_layout"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_account_box_24px"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_account_box_24px" />
+
+<!--    TextView: Go To Login Activity-->
+    <TextView
+        android:id="@+id/alreadyMember_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already a member? Login"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorBlack"/>
+
+<!-- ProgressBar: show register status-->
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/alreadyMember_text"
+        android:indeterminateTint="#1a09d6"
+        android:layout_marginTop="20dp"/>
+    
+</RelativeLayout>
